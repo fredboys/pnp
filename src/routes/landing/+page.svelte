@@ -1,6 +1,7 @@
 <script>
     import logo from "../../assets/logo-NB.png"
-    import Mantra from "../../components/mantra.svelte";
+    import Quote from "../../components/quote.svelte";
+    import Menu from "../../components/menu.svelte";
 </script>
 
 <section class="page">
@@ -8,11 +9,10 @@
         <img src={logo} alt="logo" id="logo"/>
     </div>
     <div class="slide">
-        <Mantra />
+        <Quote />
     </div>
     <div class="menu">
-        <p>menu</p>
-        <p>menu</p>        
+          <Menu />      
     </div>
 </section>
 
@@ -41,6 +41,7 @@
     .menu{
         display: flex;
         justify-content: space-between;
+        margin: 20px 40px;
     }
     p{
         color: red;
