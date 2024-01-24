@@ -1,40 +1,3 @@
-<!-- <script>
-    import '../app.css'
-    import logo from "../assets/logo-NB.png"
-  </script>
-
-<div>
-    <video muted autoplay loop>
-        <source src="/static/20240113_210908.mp4" type="video" />
-    </video>
-    <img src={logo} alt="logo" id="logo"/>
-    <button id="enter-btn">Enter</button>   
-</div>
-
-<style>
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;        
-        width: 100vw;
-        height: 100vh;
-    }
-    #logo {
-        padding-top: 30px;
-    }
-    #enter-btn{
-        margin-bottom: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-weight: bold;
-        background-color: Transparent;
-        border: 1px solid #ffffff;
-        padding: 3px 5px;
-    }
-
-</style> -->
-
 <script>
     import '../app.css'
     import logo from "../assets/logo-NB.png"
@@ -57,10 +20,11 @@
         height: 100vh;
         width:100vw;
         position: relative;
+        overflow: hidden;
     }
     video{
         position: absolute;
-        height:100vh;
+        min-height:100%;
         object-fit: cover;
     }
     #logo{
